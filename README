@@ -49,6 +49,9 @@ clean.bat
 cygwin.txt
   Build notes for LaTeX using cygwin.
 
+docs/
+  Documentation
+
 examples.tex
   Fine LaTeX Examples template.
   by Raymond E. Marcil June 26, 2006.
