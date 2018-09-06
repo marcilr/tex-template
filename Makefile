@@ -46,7 +46,7 @@ TAR    = /bin/tar
 
 # Determine LaTeX document basename dynamically.
 # Rather than hardcoding.
-BASENAME = $(shell ls *.tex | sed 's/.tex//g')
+BASENAME = $(shell ls *.tex | sed 's/\.tex//g')
 # BASENAME = bsdinspect-database
 
 
