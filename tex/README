@@ -5,6 +5,13 @@ Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+latex-examples.pdf
+  Fine LaTeX examples
+  Build of latex-examples.tex
+
 latex-examples.tex
   Fine LaTeX examples
   by Raymond E. Marcil circa 2010
+
+Makefile
+  Standard GNU makefile to build LaTeX document.
