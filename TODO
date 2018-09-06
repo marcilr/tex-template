@@ -4,6 +4,9 @@ by Raymond E. Marcil <marcilr@gmail.com>
 
 
 
++++ Thu Sep  6 13:45:21 AKDT 2018 - Would be good if Makefile handled
+an arbitrary number of *.tex files in the current working directory.
+
 +++ Mon Aug 11 08:44:24 AKDT 2014 - Difference between
 tabular and tabular*.  i.e. tabular* accepts the max table width
 as opposed to full page width.
