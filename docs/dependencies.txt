@@ -1,0 +1,14 @@
+dependencies.txt
+Created Fri May 17 13:45:01 AKDT 2019
+Copyright (C) 2019 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Dependencies
+
+
+LaTeX build dependencies for Debian 9.9.0 (Stretch) amd64
+
+
+texlive-latex-base - TeX Live: LaTeX fundamental packages
+texlive-latex-base-doc - TeX Live: Documentation files for texlive-latex-base
+
