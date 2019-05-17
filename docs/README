@@ -5,5 +5,8 @@ Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+dependencies.txt
+  Dependencies
+
 macros.txt
   Macros from $(HOME)/texmf/tex/latex$/ - Pulled in by LaTeX
