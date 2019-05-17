@@ -13,6 +13,14 @@ Delaware: Oak Knoll Press. p. 12. [ISBN] [978-1-58456-231-3.]
 http://en.wikipedia.org/wiki/International_Standard_Book_Number
 http://en.wikipedia.org/wiki/Special:BookSources/978-1-58456-231-3
 
+Cygwin
+Cygwin is a Linux-like environment for Windows.
+http://www.cygwin.com/
+
+LaTeX to PDF
+Nice outline of process and converting various graphics formats.
+http://mintaka.sdsu.edu/GF/bibliog/latex/LaTeXtoPDF.html
+
 Monospaced font
 From Wikipedia, the free encyclopedia
 A monospaced font, also called a fixed-pitch, fixed-width or non-proportional
@@ -24,3 +32,6 @@ http://en.wikibooks.org/wiki/LaTeX/Fonts
 
 Producing White Space in LaTeX
 http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/WhiteSpace.html
+
+The teTeX HOWTO: The Linux-teTeX Local Guide
+http://tldp.org/HOWTO/TeTeX-HOWTO.html
