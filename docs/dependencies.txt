@@ -12,3 +12,6 @@ LaTeX build dependencies for Debian 9.9.0 (Stretch) amd64
 texlive-latex-base - TeX Live: LaTeX fundamental packages
 texlive-latex-base-doc - TeX Live: Documentation files for texlive-latex-base
 
+For macros such as fullpage.sty and such install (866MB):
+  texlive-latex-extra - TeX Live: LaTeX additional packages
+  texlive-latex-extra-doc - TeX Live: Documentation files for texlive-latex-extra
