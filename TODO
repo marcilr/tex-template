@@ -3,6 +3,22 @@ Created Thu Aug  4 11:46:57 AKDT 2011
 by Raymond E. Marcil <marcilr@gmail.com>
 
 
++++ Fri Jun 14 07:16:25 AKDT 2019 - Exported from virtualbox tex document.
+Need to locate somewhere:
+
+%% ============= LaTeX - Wikibooks ===============
+A Guide to \LaTeX\\\
+\href{http://www.astro.rug.nl/~kuijken/latex.html}
+{http://www.astro.rug.nl/~kuijken/latex.html}
+\\
+\\
+\LaTeX\ - From Wikibooks,the open-content textbooks collection\\
+\href{http://en.wikibooks.org/wiki/LaTeX}{http://en.wikibooks.org/wiki/LaTeX}
+\\
+\\
+\LaTeX\ Notes\\
+\href{http://luke.breuer.com/time/item/LaTeX\_Notes/180.aspx}{http://luke.breuer.com/time/item/LaTeX\_Notes/180.aspx}
+
 
 +++ Thu Sep  6 13:45:21 AKDT 2018 - Would be good if Makefile handled
 an arbitrary number of *.tex files in the current working directory.
