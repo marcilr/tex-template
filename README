@@ -51,7 +51,7 @@ clean.bat
   Analogous to 'make clean' target.
 
 cygwin.txt
-  Build notes for LaTeX using cygwin.
+  Build notes for LaTeX using cygwin
 
 docs/
   Documentation
@@ -69,7 +69,7 @@ make.bat
   Build PDF from LaTeX source
 
 Makefile
-  Standard GNU makefile to build LaTeX document.
+  Standard GNU makefile to build LaTeX document
 
 template.pdf
   LaTeX Template with Examples compiled to portable document format file.
