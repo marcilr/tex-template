@@ -1,0 +1,54 @@
+%% table_examples.tex
+%% Created Wed 16 Mar 2022 12:58:43 PM AKDT
+%% Copyright (C) 2022 by Raymond E. Marcil <marcilr@gmail.com>
+%%
+
+%% ================ Table Examples ================
+%% ================ Table Examples ================
+\subsection{Table Examples}
+\begin{table}[htb]
+\begin{tabular}{|p{.25\textwidth}|p{.20\textwidth}|p{.47\textwidth}|}\hline 
+Column Name&Type&Description\\ 
+\hline
+EQS&VARCHAR2(1)&!NULL map shows village selections\\
+ITM\_COL&VARCHAR2(1)&USGS ITM column: 1-6\\
+ITM\_ROW&VARCHAR2(1)&USGS ITM row: A-E\\
+QMQ\_ABBR\_DNR&VARCHAR2(3)&Three character DNR abbreviation for the QMQ\\
+RASTER\_FILENAME&VARCHAR2(50)&Physical path to file\\
+RASTER\_PATHNAME&VARCHAR2(50)&URL path to PDF of map\\
+SCODE&VARCHAR2(2)&Supplement map code: 1,2,3,...\\
+COMMENTS&VARCHAR2(256)&Plat comments\\
+\hline
+\end{tabular}
+\caption {\cmd{EASEMENTS\_17B} Table}
+\label{table:easements_17b}
+\end{table}
+
+%% A simple table example
+%% The htb attribute attempts to inline the table or figure
+%% where you put it in the document
+\begin{table}[htb]
+\begin{center}
+\begin{tabular*}{\textwidth}{@{}p{.25\textwidth}@{}p{.75\textwidth}}
+\hline
+\hline\\[-2.5ex]
+XML element&Descripton\\
+\hline
+\hline\\[-1.5ex]   %% Trick to add whitespace after horizontal line
+FNUM&US Survey file number\\ 
+MERIDIAN&BLM meridian code\\
+&\hspace{10pt}12 = Copper River\\
+&\hspace{10pt}13 = Fairbanks\\
+&\hspace{10pt}28 = Seward\\
+&\hspace{10pt}44 = Kateel\\
+&\hspace{10pt}45 = Umiat\\
+TOWNSHIP&Five character Township code\\
+RANGE&Five character Range code\\
+PAGE&Survey page number 1,2,3,...\\
+FILENAME&Relative path to file in direcory\\[1.5ex]
+\hline
+\end{tabular*}
+\caption {USS XML index elements}
+\label{table:uss-index}
+\end{center}
+\end{table}
