@@ -15,6 +15,28 @@
 %% Specify DVIPS driver used by things like hyperref
 \documentclass[12pt,letterpaper,dvips]{article}
 
+%%
+%% Adding unnumbered sections to TOC
+%% Asked 11 years ago, Modified 4 months ago, Viewed 101k times
+%%
+%% The easiest way to do this is to use \section but to change
+%% secnumdepth so that they don't get numbered.
+%%
+%% \documentclass{article}
+%% \setcounter{secnumdepth}{0}
+%% \begin{document}
+%% \tableofcontents
+%% \section{ADSF}
+%% \section{Foo}
+%% \end{document}
+%% \setcounter{secnumdepth}{0}
+%%
+%% Adding unnumbered sections to TOC
+%% Asked 11 years ago, Modified 4 months ago, Viewed 101k times
+%% https://tex.stackexchange.com/questions/11668/adding-unnumbered-sections-to-toc
+%%
+\setcounter{secnumdepth}{0}
+
 %% rcs is the package to display cvs revision info.
 %%\usepackage{rcs}
 \usepackage{fullpage}
@@ -269,6 +291,7 @@ pdfkeywords={LaTeX Examples}
 
 %% ====================== Sections =====================
 %% ====================== Sections =====================
+\input{00SECTIONS/preface.tex}             %% Preface
 \input{00SECTIONS/abbreviations.tex}       %% List of Abbreviations
 \input{00SECTIONS/introduction.tex}        %% Introduction
 \input{00SECTIONS/examples/examples.tex}   %% Examples
