@@ -52,3 +52,36 @@ FILENAME&Relative path to file in direcory\\[1.5ex]
 \label{table:uss-index}
 \end{center}
 \end{table}
+
+%%
+%% NOTE: tabular* takes table width argument
+%%       Use of 'p' for left aligned column.
+%%       Use of 'cp' to center column.
+%%       The @{} works to remove an unwanted space.
+%%
+%% FIXME: Set width of centered columns?
+%%
+%% Links
+%% =====
+%% Getting to Grips with Latex - Tables
+%% by Andrew Roberts
+%% Source for @{\extracolsep{\fill} syntax.
+%% http://www.andy-roberts.net/misc/latex/latextutorial4.html
+%%
+\begin{table}[htb]
+\begin{center}
+\begin{tabular*}{0.90\textwidth}{@{\extracolsep{\fill}}@{}l@{}c@{}c@{}c}
+  \hline
+  \hline\\[-2.5ex]
+  col 1 & col 2 & col 3 & col 4 \\
+  \hline
+  \hline\\[-1.5ex]
+  item 1 & item 2 & item 3 & item 4 \\
+  \hline
+  item 1  & item 2  & item 3  & item 4  \\
+  \hline
+\end{tabular*}
+\caption {Demo}
+\label{table:demo-index}
+\end{center}
+\end{table}
