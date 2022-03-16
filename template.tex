@@ -271,9 +271,8 @@ pdfkeywords={LaTeX Examples}
 %% ====================== Sections =====================
 \input{00SECTIONS/abbreviations.tex}       %% List of Abbreviations
 \input{00SECTIONS/introduction.tex}        %% Introduction
-\input{00SECTIONS/questions.tex}           %% Questions
 \input{00SECTIONS/examples/examples.tex}   %% Examples
-
+\input{00SECTIONS/caption.tex}             %% Caption
 
 %% ================== Installed Daemons ===================
 %% ================== Installed Daemons ===================
@@ -294,32 +293,10 @@ pdfkeywords={LaTeX Examples}
 %% by Andrew Roberts
 %% http://www.andy-roberts.net/misc/latex/latextutorial4.html
 %%
-%%
-%% Configure caption on left using caption package.
-%% The key to this working is placing the \captionsetup
-%% just before the table or figure for which to manipulate
-%% the package.
-%%
-%% Other potential potential options include:
-%%   labelsep=newline
-%%   labelfont=bf
-%%
-%% Links
-%% =====
-%% Raggedright and caption package
-%% http://tex.stackexchange.com/questions/120411/raggedright-and-caption-package
-%%
-\captionsetup{%
-    justification=raggedright,
-    singlelinecheck=false
-}
 
-\noindent\FIXME{Need to complete details here}
-
-%% ======================== Endnotes =============================
-%% ======================== Endnotes =============================
-\input{00SECTIONS/endnotes.tex}
-\input{00SECTIONS/appendix.tex}
+\input{00SECTIONS/questions.tex}           %% Questions
+\input{00SECTIONS/endnotes.tex}            %% Endnotes
+\input{00SECTIONS/appendix.tex}            %% Appendix
 
 \end{document}
 
