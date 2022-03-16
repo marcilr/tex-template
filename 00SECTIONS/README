@@ -11,8 +11,8 @@ abbreviations.tex
 abstract.tex 
   Abstract
 
-examples.tex
-  Examples
+examples/
+  Examples section with subsections
 
 hyperlinks.tex
   Hyperlinks
