@@ -11,6 +11,9 @@ abbreviations.tex
 abstract.tex 
   Abstract
 
+endnotes.tex
+  Endnotes
+
 examples/
   Examples section with subsections
 
