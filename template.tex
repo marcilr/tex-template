@@ -15,6 +15,8 @@
 %% Specify DVIPS driver used by things like hyperref
 \documentclass[12pt,letterpaper,dvips]{article}
 
+
+
 %%
 %% Adding unnumbered sections to TOC
 %% Asked 11 years ago, Modified 4 months ago, Viewed 101k times
@@ -37,6 +39,7 @@
 %%
 \setcounter{secnumdepth}{0}
 
+%% Displays nice fully qualified date
 \usepackage{datetime}
 
 %%
@@ -50,7 +53,7 @@
 %% 2015-03-20
 %% https://ctan.math.washington.edu/tex-archive/obsolete/macros/latex/contrib/datetime/datetime.pdf
 %%
-\longdate
+%%\longdate
 
 
 %% rcs is the package to display cvs revision info.
@@ -241,6 +244,18 @@ pdfkeywords={LaTeX Examples}
 \setcounter{topnumber}{50}
 \setcounter{bottomnumber}{50}
 
+%%
+%% Used for inline space using \hard
+%% Using betweem date and build time
+%%
+%% Special spaces in LaTeX
+%% Asked 9 years, 2 months ago
+%% Modified 9 years, 2 months ago
+%% Viewed 2k times
+%% --answered Jan 3, 2013 at 14:12, egreg
+%% https://tex.stackexchange.com/questions/89075/special-spaces-in-latex
+\newcommand{\hard}[1]{\unskip\hspace{#1}\ignorespaces}
+
 
   %%
 %%%%%% Document.
@@ -288,10 +303,43 @@ pdfkeywords={LaTeX Examples}
 
 \begin{document}
 
-\maketitle
-\usdate
+%%
+%% This displays date like:
+%% Wednesday 16th March, 2022 19:13 
+%%
+%% \hard defined above with:
+%%   \newcommand{\hard}[1]{\unskip\hspace{#1}\ignorespaces}
+%%
+%% Special spaces in LaTeX
+%% Ask Question
+%% Asked 9 years, 2 months ago
+%% Modified 9 years, 2 months ago
+%% Viewed 2k times
+%% https://tex.stackexchange.com/questions/89075/special-spaces-in-latex
+%%
+\date{\today\hard{0.3em}\currenttime}
 
-today: \today
+\maketitle
+%%\usdate
+
+%% 
+%% \maketitle command. As by default, it executes in the hidden
+%% command \date{\today}.
+%% Add current time to \today with package datetime? (LaTeX)
+%% Asked 11 years, 4 months ago
+%% Modified 8 years, 1 month ago
+%% Viewed 56k times
+%% asked Oct 31, 2010 at 18:16, vy32
+%% edited Jan 23, 2014 at 8:57, strpeter
+%%
+%% This displays date like:
+%% Wednesday 16th March, 2022
+%%
+\date{\today}
+
+%% today: \today
+
+
 
 %%
 %% 17:29
@@ -309,19 +357,17 @@ currentime: \currenttime \hspace{1cm} (correct)
 %%\pdfdate
 
 %% 'February'
-monthname: \monthname
+%%monthname: \monthname
 
 %% Nothing displayed
-longdate: \longdate
+%%longdate: \longdate
 
 %% Nothing displayed
-shortdate: \shortdate
+%%shortdate: \shortdate
 
 %% Mon 4th Feb, 2013
 today: \today
 
-%% Nothing displayed
-date: \date
 
 %%
 %% datetime package
@@ -331,7 +377,7 @@ date: \date
 %% Viewed 6k times
 %% https://tex.stackexchange.com/questions/18196/is-there-a-command-to-get-the-name-of-the-current-day-of-the-week
 %%
-Today is \dayofweekname{\day}{\month}{\year}
+%%Today is \dayofweekname{\day}{\month}{\year}
 
 
 
