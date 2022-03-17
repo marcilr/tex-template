@@ -37,6 +37,22 @@
 %%
 \setcounter{secnumdepth}{0}
 
+\usepackage{datetime}
+
+%%
+%% Make for pretty date like:
+%% Monday 4th February, 2013
+%% datetime.sty v2.60: Formatting
+%% Current Date and Time
+%% Nicola L. C. Talbot
+%% Dickimaw Books
+%% http://www.dickimaw-books.com/
+%% 2015-03-20
+%% https://ctan.math.washington.edu/tex-archive/obsolete/macros/latex/contrib/datetime/datetime.pdf
+%%
+\longdate
+
+
 %% rcs is the package to display cvs revision info.
 %%\usepackage{rcs}
 \usepackage{fullpage}
@@ -44,6 +60,8 @@
 \usepackage{graphicx}
 \usepackage{figsize}
 \usepackage{calc}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 %%
 %% enumitem – Control layout of itemize, enumerate, description
@@ -65,7 +83,6 @@
 \usepackage{booktabs}
 \usepackage[first,bottomafter]{draftcopy}
 \usepackage[numbib]{tocbibind}
-
 \usepackage{amssymb}              %% AMS Symbols, used for \checkmark
 \usepackage{multicol}
 
@@ -235,17 +252,31 @@ pdfkeywords={LaTeX Examples}
         \texttt{$<$marcilr@gmail.com$>$}
 }
 
+%%
+%% This does not update the date from:
+%% February 4, 2013
+%%
+%%\today
+
+%%
+%% The appears to be permanently set and displayed
+%% as February 4, 2013.  Whether set below or not.
+%%
+
 % Display subversion revision and date under author on 1st page.
-\date{Revision \svnInfoRevision
-      \hspace{2pt}
-      (\svnInfoLongDate)}
+%%\date{Revision \svnInfoRevision
+%%      \hspace{2pt}
+%%      (\date{\today})}
+%%\date{\today\\v1.2}
+%%      (\svnInfoLongDate)}
 
-
-% Set date to RCS revision date
+%% Set date to RCS revision date
 %%\date{Revision \RCSRevision
 %%      \hspace{2pt}
 %%      (\RCSDate)}
 
+
+%%\rfoot{Compiled on \today\ at \currenttime}
 
 %%
 %% Display SVN (subversion) version data at top right of 1st page,
@@ -258,6 +289,51 @@ pdfkeywords={LaTeX Examples}
 \begin{document}
 
 \maketitle
+\usdate
+
+today: \today
+
+%%
+%% 17:29
+%% This does display the does military time like 17:29
+%% datetime.sty v2.60: Formatting
+%% Current Date and Time
+%%https://ctan.math.washington.edu/tex-archive/obsolete/macros/latex/contrib/datetime/datetime.pdf
+%%
+currentime: \currenttime \hspace{1cm} (correct)
+
+%%
+%% 20220316175000
+%% For use in pdf filenams
+%%
+%%\pdfdate
+
+%% 'February'
+monthname: \monthname
+
+%% Nothing displayed
+longdate: \longdate
+
+%% Nothing displayed
+shortdate: \shortdate
+
+%% Mon 4th Feb, 2013
+today: \today
+
+%% Nothing displayed
+date: \date
+
+%%
+%% datetime package
+%% Is there a command to get the name of the current day of the week?
+%% Asked 10 years, 10 months ago
+%% Modified 10 years, 10 months ago
+%% Viewed 6k times
+%% https://tex.stackexchange.com/questions/18196/is-there-a-command-to-get-the-name-of-the-current-day-of-the-week
+%%
+Today is \dayofweekname{\day}{\month}{\year}
+
+
 
 %% ====================== Abstract =====================
 %% ====================== Abstract =====================
