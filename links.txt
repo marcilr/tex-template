@@ -13,6 +13,11 @@ Delaware: Oak Knoll Press. p. 12. [ISBN] [978-1-58456-231-3.]
 http://en.wikipedia.org/wiki/International_Standard_Book_Number
 http://en.wikipedia.org/wiki/Special:BookSources/978-1-58456-231-3
 
+Adding unnumbered sections to TOC
+Ask Question, Asked 11 years ago, Modified 4 months ago
+Viewed 101k times
+https://tex.stackexchange.com/questions/11668/adding-unnumbered-sections-to-toc
+
 Cygwin
 Cygwin is a Linux-like environment for Windows.
 http://www.cygwin.com/
