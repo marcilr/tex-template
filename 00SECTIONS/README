@@ -8,8 +8,32 @@ Filelist
 abbreviations.tex
   List of Abbreviations
 
+abstract.tex 
+  Abstract
+
+appendix.tex
+  Appendix
+
+caption.tex
+  Caption configuration
+
+endnotes.tex
+  Endnotes
+
+examples/
+  Examples section with subsections
+
 hyperlinks.tex
   Hyperlinks
+
+introduction.tex
+  Introduction
+
+preface.tex
+  Preface
+
+questions.tex
+  Questions
 
 table-examples.tex
   Table examples
